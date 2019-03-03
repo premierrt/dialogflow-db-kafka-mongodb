@@ -16,8 +16,13 @@ public class MongoClientTest {
 		client= new MongoClientTestowy();
 	}
 	@Test
-	public void test() {
+	public void testGetAll() {
 		client.getAllCities();
+	}
+	
+	@Test
+	public void testDFReq() {
+		client.saveDFRequest();
 	}
 
 }

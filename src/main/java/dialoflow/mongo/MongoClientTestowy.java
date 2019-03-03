@@ -1,6 +1,7 @@
 package dialoflow.mongo;
 
 import org.bson.Document;
+import org.json.JSONObject;
 import org.springframework.stereotype.Service;
 
 import com.mongodb.client.MongoClient;
@@ -107,8 +108,17 @@ public class MongoClientTestowy {
 		 mongoClient.close();
 	}
 	
+	
+	//https://stackoverflow.com/questions/12397118/mongodb-dot-in-key-name
 	public void saveDFRequest() {
-		
+		MongoClient mongoClient = MongoClients.create();
+		 MongoDatabase database = mongoClient.getDatabase("test_1234");
+		 MongoCollection<Document> collection = database.getCollection("cities");
+		 collection.insertOne( Document.parse(request) );
+		 
+		 mongoClient.close();
+		 
+		 
 	}
 	
 }
