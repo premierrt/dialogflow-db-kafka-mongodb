@@ -31,6 +31,7 @@ public class MongoClientTestowy {
 		 } finally {
 		     cursor.close();
 		 }
+		 mongoClient.close();
 	}
 	
 }
