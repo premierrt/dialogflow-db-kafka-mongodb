@@ -7,7 +7,7 @@ import org.junit.Test;
 
 import dialoflow.mongo.MongoClientTestowy;
 
-public class MongoClientTest {
+public class MongoClientIntegrationTest {
 
 	private MongoClientTestowy client;
 	
