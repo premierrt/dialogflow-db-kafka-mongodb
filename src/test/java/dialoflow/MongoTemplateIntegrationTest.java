@@ -11,7 +11,7 @@ import dialoflow.mongo.MongoClientTemplateDao;
 
 @SpringBootTest
 @RunWith(SpringRunner.class)
-public class MongoTemplateTest {
+public class MongoTemplateIntegrationTest {
 
 	@Autowired
 	private MongoClientTemplateDao dao;
